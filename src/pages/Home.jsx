@@ -17,7 +17,7 @@ const Home = () => {
   };
 
   return (
-    <section className='flex flex-col items-center justify-center text-center px-8 text-text'>
+    <section>
       <DiGithubBadge size={130} />
       <h1 className='text-[42px] font-bold'>API GitHub</h1>
       <form

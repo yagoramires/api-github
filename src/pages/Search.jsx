@@ -4,7 +4,11 @@ import { useParams } from 'react-router-dom';
 const Search = () => {
   const { id } = useParams();
 
-  return <section>{id}</section>;
+  return (
+    <section>
+      <h1 className='text-text '>{id}</h1>
+    </section>
+  );
 };
 
 export default Search;

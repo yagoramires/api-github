@@ -15,4 +15,12 @@
 section {
   min-height: 100vh;
   background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+
+  color: white;
 }
