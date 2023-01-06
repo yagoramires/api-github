@@ -17,7 +17,7 @@ const Home = () => {
   };
 
   return (
-    <section>
+    <main>
       <DiGithubBadge size={130} />
       <h1 className='text-[42px] font-bold'>API GitHub</h1>
       <form
@@ -38,7 +38,7 @@ const Home = () => {
           <BiSearch size={30} />
         </button>
       </form>
-    </section>
+    </main>
   );
 };
 

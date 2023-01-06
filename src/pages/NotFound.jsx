@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <section>
+    <main>
       <DiGithubBadge size={130} />
       <DiGithubFull size={80} className='mt-[-20px]' />
       <h1 className='text-title'>404 - Página não encontrada</h1>
@@ -16,7 +16,7 @@ const NotFound = () => {
         <IoIosArrowBack />
         Voltar
       </Link>
-    </section>
+    </main>
   );
 };
 
