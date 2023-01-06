@@ -24,3 +24,29 @@ main {
 
   color: white;
 }
+
+@media (max-width: 767px) {}
+
+.mobile {
+  grid-template-columns: auto auto;
+}
+
+.javascript:hover {
+  background: #f1c40f;
+}
+
+.typescript:hover {
+  background: #3498db;
+}
+
+.html:hover {
+  background: #e67e22;
+}
+
+.css:hover {
+  background: #2980b9;
+}
+
+.scss:hover {
+  background: pink;
+}
