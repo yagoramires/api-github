@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Profile from '../components/Profile';
 import axios from 'axios';
 import Filter from '../components/Filter';
+import Repositories from '../components/Repositories';
 
 const Search = () => {
   const { id } = useParams();
@@ -29,7 +30,7 @@ const Search = () => {
         <Filter repos={repos} />
       </aside>
       <section className='bg-container p-10 w-full flex h-[100vh] overflow-hidden  md:h-full sm:py-10 sm:px-5'>
-        main
+        <Repositories repos={repos} />
       </section>
     </div>
   );

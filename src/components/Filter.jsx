@@ -19,14 +19,10 @@ const Filter = ({ repos }) => {
     return reposFilter.length;
   };
 
-  const colors = ['danger', 'container', 'blue', 'green', 'red'];
-
-  const color = 'blue';
-
   const selectors = languagesArray.map((lang, i) => (
     <button
       type='button'
-      className={`flex items-center justify-between min-w-full min-h-[2rem] bg-container rounded-r-[20px] text-text px-4 transition-all duration-300 cursor-pointer md:rounded-2xl ${lang.toLowerCase()}`}
+      className={`flex items-center justify-between min-w-full min-h-[2rem] bg-container rounded-r-[20px] text-text px-4 transition-all duration-300 cursor-pointer md:rounded-2xl ${lang.toLowerCase()} hover:scale-x-105`}
       key={i}
     >
       <p>{lang}</p>
@@ -38,8 +34,8 @@ const Filter = ({ repos }) => {
     <div className='grid grid-cols-[auto] gap-[0.2rem] my-4 mx-auto pr-8  md:gap-[0.8rem] md:px-4  mobile'>
       {selectors}
 
-      <button className=' hover:bg-[rgba(255,255,255,0.5)] transition-all duration-300 rounded-2xl'>
-        Clear
+      <button className=' hover:bg-[rgba(255,255,255,0.5)] transition-all duration-300 md:rounded-2xl rounded-r-[20px] min-h-[2rem] px-4'>
+        Limpar
       </button>
     </div>
   );

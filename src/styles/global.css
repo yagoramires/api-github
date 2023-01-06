@@ -25,10 +25,56 @@ main {
   color: white;
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
 
-.mobile {
-  grid-template-columns: auto auto;
+  .mobile {
+    grid-template-columns: auto auto;
+  }
+
+}
+
+.javascriptText {
+  color: #f1c40f;
+}
+
+.typescriptText {
+  color: #3498db;
+}
+
+.htmlText {
+  color: #e67e22;
+}
+
+.cssText {
+  color: #2980b9;
+}
+
+.sassText {
+  border-color: pink;
+}
+
+.javascript:hover {
+  background: #f1c40f;
+}
+
+.javascriptBorder {
+  border-color: #f1c40f;
+}
+
+.typescriptBorder {
+  border-color: #3498db;
+}
+
+.htmlBorder {
+  border-color: #e67e22;
+}
+
+.cssBorder {
+  border-color: #2980b9;
+}
+
+.sassBorder {
+  border-color: pink;
 }
 
 .javascript:hover {
@@ -37,16 +83,20 @@ main {
 
 .typescript:hover {
   background: #3498db;
+
 }
 
 .html:hover {
   background: #e67e22;
+
 }
 
 .css:hover {
   background: #2980b9;
+
 }
 
 .scss:hover {
   background: pink;
+
 }
