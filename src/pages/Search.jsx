@@ -10,18 +10,73 @@ const Search = () => {
   const [profile, setProfile] = useState({});
   const [repos, setRepos] = useState([]);
 
+  // useEffect(() => {
+  //   (async () => {
+  //     const userData = await axios.get(`https://api.github.com/users/${id}`);
+  //     setProfile(userData.data);
+  //   })();
+  //   (async () => {
+  //     const reposData = await axios.get(
+  //       `https://api.github.com/users/${id}/repos`,
+  //     );
+  //     setRepos(reposData.data);
+  //   })();
+  // }, [id]);
+
   useEffect(() => {
-    (async () => {
-      const userData = await axios.get(`https://api.github.com/users/${id}`);
-      setProfile(userData.data);
-    })();
-    (async () => {
-      const reposData = await axios.get(
-        `https://api.github.com/users/${id}/repos`,
-      );
-      setRepos(reposData.data);
-    })();
-  }, [id]);
+    setProfile({
+      login: 'yagoramires',
+      avatar_url: 'https://avatars.githubusercontent.com/u/77733200?v=4',
+      html_url: 'https://github.com/yagoramires',
+      name: 'Yago Ramires',
+      company: 'D2B Representações',
+      blog: '',
+      location: 'Rio de Janeiro, RJ',
+      followers: 5,
+      following: 8,
+    });
+  }, []);
+
+  useEffect(() => {
+    setRepos([
+      {
+        name: 'Repo 1',
+        description: 'Descrição',
+        html_url: 'https://github.com/yagoramires',
+        language: 'JavaScript',
+      },
+      {
+        name: 'Repo 2',
+        description: 'Descrição',
+        html_url: 'https://github.com/yagoramires',
+        language: 'HTML',
+      },
+      {
+        name: 'Repo 3',
+        description: 'Descrição',
+        html_url: 'https://github.com/yagoramires',
+        language: 'CSS',
+      },
+      {
+        name: 'Repo 4',
+        description: 'Descrição',
+        html_url: 'https://github.com/yagoramires',
+        language: 'TypeScript',
+      },
+      {
+        name: 'Repo 5',
+        description: 'Descrição',
+        html_url: 'https://github.com/yagoramires',
+        language: 'Ruby',
+      },
+      {
+        name: 'Repo 6',
+        description: 'Descrição',
+        html_url: 'https://github.com/yagoramires',
+        language: 'SCSS',
+      },
+    ]);
+  }, []);
 
   return (
     <div className='bg-background flex flex-row md:flex-col w-full min-h-[100vh] text-text p-0'>

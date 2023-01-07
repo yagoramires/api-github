@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 const Filter = ({ repos }) => {
   const [languagesArray, setLanguagesArray] = useState([]);
-  console.log(repos);
 
   useEffect(() => {
     if (repos.length > 0) {
@@ -22,7 +21,7 @@ const Filter = ({ repos }) => {
   const selectors = languagesArray.map((lang, i) => (
     <button
       type='button'
-      className={`flex items-center justify-between min-w-full min-h-[2rem] bg-container rounded-r-[20px] text-text px-4 transition-all duration-300 cursor-pointer md:rounded-2xl ${lang.toLowerCase()} hover:scale-x-105`}
+      className={`flex items-center justify-between min-w-full min-h-[2rem] bg-container rounded-r-[20px] ${lang.toLowerCase()}Text hover:text-text px-4 transition-all duration-300 cursor-pointer md:rounded-2xl ${lang.toLowerCase()}Background hover:scale-x-105`}
       key={i}
     >
       <p>{lang}</p>

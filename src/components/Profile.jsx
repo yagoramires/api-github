@@ -24,20 +24,26 @@ const Profile = ({ user }) => {
             &nbsp;<i>Seguindo</i>
           </span>
         </p>
-        <p className='flex items-center leading-[1.5] text-[12px]'>
-          <MdBusinessCenter className='mr-4 ' size={20} />
-          {user?.company}
-        </p>
-        <p className='flex items-center leading-[1.5] text-[12px]'>
-          <HiLocationMarker className='mr-4 ' size={20} />
-          {user?.location}
-        </p>
-        <p className='flex items-center leading-[1.5] text-[12px]'>
-          <MdLink className='mr-4 ' size={20} />
-          <a href={user?.html_url} className='border-b-[1px]' target={'blank'}>
-            {user?.html_url?.replace('https://', '')}
-          </a>
-        </p>
+        {user.company && (
+          <p className='flex items-center leading-[1.5] text-[12px]'>
+            <MdBusinessCenter className='mr-4 ' size={20} />
+            {user.company}
+          </p>
+        )}
+        {user.location && (
+          <p className='flex items-center leading-[1.5] text-[12px]'>
+            <HiLocationMarker className='mr-4 ' size={20} />
+            {user.location}
+          </p>
+        )}
+        {user.html_url && (
+          <p className='flex items-center leading-[1.5] text-[12px]'>
+            <MdLink className='mr-4 ' size={20} />
+            <a href={user.html_url} className='border-b-[1px]' target={'blank'}>
+              {user.html_url?.replace('https://', '')}
+            </a>
+          </p>
+        )}
       </div>
     </div>
   );

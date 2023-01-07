@@ -33,70 +33,136 @@ main {
 
 }
 
+/* COLOR VARS */
+
 .javascriptText {
   color: #f1c40f;
-}
-
-.typescriptText {
-  color: #3498db;
-}
-
-.htmlText {
-  color: #e67e22;
-}
-
-.cssText {
-  color: #2980b9;
-}
-
-.sassText {
-  border-color: pink;
-}
-
-.javascript:hover {
-  background: #f1c40f;
 }
 
 .javascriptBorder {
   border-color: #f1c40f;
 }
 
+.javascriptBackground:hover {
+  background-color: #f1c40f;
+}
+
+.typescriptText {
+  color: #2980b9;
+}
+
 .typescriptBorder {
-  border-color: #3498db;
+  border-color: #2980b9;
+}
+
+.typescriptBackground:hover {
+  background-color: #2980b9;
+}
+
+.htmlText {
+  color: #e67e22;
 }
 
 .htmlBorder {
   border-color: #e67e22;
 }
 
+.htmlBackground:hover {
+  background-color: #e67e22;
+}
+
+.cssText {
+  color: #9b59b6;
+}
+
 .cssBorder {
-  border-color: #2980b9;
+  border-color: #9b59b6;
 }
 
-.sassBorder {
-  border-color: pink;
+.cssBackground:hover {
+  background-color: #9b59b6;
 }
 
-.javascript:hover {
-  background: #f1c40f;
+.scssText {
+  color: rgb(243, 164, 177);
 }
 
-.typescript:hover {
-  background: #3498db;
-
+.scssBorder {
+  border-color: rgb(243, 164, 177);
 }
 
-.html:hover {
-  background: #e67e22;
-
+.scssBackground:hover {
+  background-color: rgb(243, 164, 177);
 }
 
-.css:hover {
-  background: #2980b9;
-
+.pythonText {
+  color: #2ecc71;
 }
 
-.scss:hover {
-  background: pink;
+.pythonBorder {
+  border-color: #2ecc71;
+}
 
+.pythonBackground:hover {
+  background-color: #2ecc71;
+}
+
+.vueText {
+  color: #1abc9c;
+}
+
+.vueBorder {
+  border-color: #1abc9c;
+}
+
+.vueBackground:hover {
+  background-color: #1abc9c;
+}
+
+.phpText {
+  color: #3498db;
+}
+
+.phpBorder {
+  border-color: #3498db;
+}
+
+.phpBackground:hover {
+  background-color: #3498db;
+}
+
+.goText {
+  color: #72aed8;
+}
+
+.goBorder {
+  border-color: #72aed8;
+}
+
+.goBackground:hover {
+  background-color: #72aed8;
+}
+
+.rubyText {
+  color: #e74c3c;
+}
+
+.rubyBorder {
+  border-color: #e74c3c;
+}
+
+.rubyBackground:hover {
+  background-color: #e74c3c;
+}
+
+.cText {
+  color: #16a085;
+}
+
+.cBorder {
+  border-color: #16a085;
+}
+
+.cBackground:hover {
+  background-color: #16a085;
 }
