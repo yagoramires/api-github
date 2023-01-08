@@ -1,6 +1,7 @@
 import React from 'react';
 import { HiUserGroup, HiLocationMarker } from 'react-icons/hi';
 import { MdBusinessCenter, MdLink } from 'react-icons/md';
+import { DiGithubBadge } from 'react-icons/di';
 
 const Profile = ({ user }) => {
   return (
@@ -11,7 +12,12 @@ const Profile = ({ user }) => {
           alt='Avatar'
           className='self-center rounded-full w-[70%] h-[70%] mb-4 md:w-[70px] md:h-[70px] md:mr-4 md:mb-0'
         />
-        <h1 className='mb-2 text-title'>{user?.login}</h1>
+        <h1 className='flex items-center gap-2 mb-2 text-title'>
+          <DiGithubBadge size={30} />{' '}
+          <a href={user.html_url} target='_blank' rel='noopener noreferrer'>
+            {user?.login}
+          </a>
+        </h1>
         <h2 className='font-bold text-subtitle md:hidden'>{user?.name}</h2>
       </div>
 
@@ -36,11 +42,16 @@ const Profile = ({ user }) => {
             {user.location}
           </p>
         )}
-        {user.html_url && (
+        {user.blog && (
           <p className='flex items-center leading-[1.5] text-[12px]'>
             <MdLink className='mr-4 ' size={20} />
-            <a href={user.html_url} className='border-b-[1px]' target={'blank'}>
-              {user.html_url?.replace('https://', '')}
+            <a
+              href={user.blog}
+              className='border-b-[1px]'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {user.blog?.replace('https://', '')}
             </a>
           </p>
         )}
