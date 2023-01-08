@@ -9,8 +9,9 @@ import Search from './pages/Search';
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/:id/repositories' element={<Search />} />
+      {/* <Route path='/' element={<Home />} /> */}
+      {/* <Route path='/:id/repositories' element={<Search />} /> */}
+      <Route path='/' element={<Search />} />
       <Route path='/*' element={<NotFound />} />
     </Routes>
   );

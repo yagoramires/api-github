@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import Profile from '../components/Profile';
 import axios from 'axios';
 import Filter from '../components/Filter';
 import Repositories from '../components/Repositories';
 
 const Search = () => {
-  const { id } = useParams();
+  // const { id } = useParams();
+  const id = 'yagoramires';
   const [profile, setProfile] = useState({});
   const [repos, setRepos] = useState([]);
   const [filter, setFilter] = useState(null);

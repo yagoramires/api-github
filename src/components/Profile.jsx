@@ -42,7 +42,7 @@ const Profile = ({ user }) => {
             {user.location}
           </p>
         )}
-        {user.blog && (
+        {/* {user.blog && (
           <p className='flex items-center leading-[1.5] text-[12px]'>
             <MdLink className='mr-4 ' size={20} />
             <a
@@ -54,7 +54,7 @@ const Profile = ({ user }) => {
               {user.blog?.replace('https://', '')}
             </a>
           </p>
-        )}
+        )} */}
       </div>
     </div>
   );
