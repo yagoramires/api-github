@@ -26,11 +26,11 @@ const Search = () => {
 
   return (
     <div className='bg-container flex flex-row md:flex-col w-full min-h-[100vh] text-text p-0 '>
-      <aside className='fixed bg-background w-[20rem] min-h-[100vh] '>
+      <aside className='fixed md:static md:min-w-full md:min-h-[auto] bg-background max-w-[20rem] min-h-[100vh] '>
         <Profile user={profile} />
         <Filter repos={repos} setFilter={setFilter} />
       </aside>
-      <section className='ml-[20rem] flex flex-col w-full h-full p-10 overflow-x-hidden bg-container md:h-full sm:py-10 sm:px-5'>
+      <section className='ml-[20rem] md:ml-0 flex flex-col w-full h-full p-10 overflow-x-hidden bg-container md:h-full sm:py-10 sm:px-5'>
         <h1 className='mb-4 font-bold text-title'>Projetos</h1>
         <Repositories repos={filter ? filter : repos} />
       </section>
